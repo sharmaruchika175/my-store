@@ -1,16 +1,38 @@
+@media only screen and (min-width: 751px){
+    .mobile-navi{
+	display:none;
+	}	 
+}
+@media only screen and (min-width: 751px)and (max-width: 1020px){
+	div.mainheader1 input {
+		width: 60px;
+		height:20px;
+    }
+}
+@media only screen and (max-width: 750px) and (min-width: 320px){
+	.mobile-navi{
+		display: block;
+	}
+	.main-header-navi{
+		display:none;
+	}
+}
 body {
 	padding:0;
 	margin:0;
 	font-size: 80%;
 }
-div.top-line {
+img{
+	max-width:100%;
+}
+.top-line {
 	width: 100%;
-	height: 20px;
+	padding: 5px 0 5px 0;
 	}
-div.top-line p {
+.top-line p {
 text-align: center;	
 margin: 0;
-color: #867592
+color: #4863A0
 }
 div.top-line a {
 	background: url("../images/close.png") no-repeat 0 0;
@@ -21,13 +43,13 @@ div.top-line a {
 	right:10px;
 }
 div.navi {
-	background-color: coral;
+	background-color: #f08080;
 	height: 30px;
 	width: 100%;
-	border-bottom: 0.5px solid #867592;
+	border-bottom: 0.5px solid #4863A0;
 }
 div.intro a {
-	color:#867592;
+	color:#4863A0;
 }
 div.navi ul {	
 	margin:0;
@@ -43,12 +65,12 @@ li a#signup {
 div.language-selector {
 	float:right;
 	margin:6px;
-	color:#867592;
+	color:#4863A0;
 	padding-right: 20px;
 }
 div.language-selector span {
 	color: white;
-	border-right: 1px solid #867592;
+	border-right: 1px solid #4863A0;
 	padding-right: 5px;
 }
 div.language-selector a {
@@ -71,8 +93,8 @@ div a:hover {
 	color: white;
 }
 div.mainheader {
-	background-color:coral;
-	color: #867592;
+	background-color:#f08080;
+	color: #4863A0;
 }
 
 div.mainheader1 h1 {
@@ -80,21 +102,24 @@ div.mainheader1 h1 {
 	Font-size:40px;
 	letter-spacing: 20px;
 	margin: 0;
+	
 }
 .mainheader1 .search-form{
 	position: absolute;
-    right: 30px;
+    right: 20px;
     top: 70px;
 }
 div.mainheader1 input {
-	padding-right: 70px;
+	padding-right: 50px;
 }
 .mainheader2 .navigation {
 	margin: auto;
-    width: 55%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
 }
 div.mainheader2 .navigation a {
-	padding-right: 40px;
+	padding-right: 65px;
 	font-weight: bold;
     font-size: 15px
 }
@@ -102,26 +127,27 @@ div.mainheader2 .navigation a {
 .content {
 	display: inline-block;
 }
-.content .dropdown-list {
+.content .dropdown-list{
 	display:none;
 	position: absolute;
 	background: white;
     z-index: 3;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,.2);
 }
-.content.expanded .dropdown-list {
+.expanded .dropdown-list {
 	display: block;	
 }
 .content .dropdown-list ul {
 	list-style:none;
 	margin: 0px;
 	padding: 15px 0 0 0;
+	text-align: left;
 }
 div.dropdown-list li  {
 	line-height: 1.7;
 }
 div.dropdown-list li:hover  {
-	background-color:coral;
+	background-color:#f08080;
 }
 div.dropdown-list li a  {
 	padding: 5px 0px 0px 15px;
@@ -151,4 +177,103 @@ div.jcarousel .listitem {
 div.jcarousel .listitem img{
 	width: 100%;
 	height: 100%
+}
+.footer-main{
+	padding:0px 20px 10px 120px;
+	background-color:#f08080;
+	color: #4863A0;
+}
+.footer-main a{
+	color: #4863A0;
+}
+div.footer-element {
+	float:left;
+	width:22%;
+	padding-top: 30px;
+}
+div.footer-main ul {
+	list-style: none;
+	font-size: 15px;
+	padding-left: 0px;
+}
+div.footer-main:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+   }
+div.footer-right a{
+	margin-right: 10px;
+}
+.ham-burger-icon {
+	position: relative;
+    padding-left: 1em;
+}
+.ham-burger-dropdown-list {
+	display:none;
+	position: absolute;
+	top: 5em;
+	left: 1em;
+    width: 160px;
+	background:#f08080;
+	color: #4863A0;
+    z-index: 3;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.2);
+}
+.ham-burger-dropdown-list ul {
+	list-style:none;
+	margin: 0px;
+	padding: 15px 0 0 0;
+	text-align: left;
+}
+.mobile-navi-main .ham-burger-dropdown-list li {
+	width:100%;
+}
+.expanded .ham-burger-dropdown-list {
+	display: block;	
+}
+.mobile-navi-main li.ham-burger-menu{
+    width: 10%;	
+}
+.ham-burger-icon:before {
+	content: "";
+  	position: absolute;
+  	top: 0.25em;
+  	left: 0;
+  	width: 1em;
+  	height: 0.125em;
+  	border-top: 0.5em double #4863A0;
+  	border-bottom: 0.2em solid #4863A0;
+  	margin-left: 2px;
+}
+.mobile-navi-main li{
+	display: inline-block;
+	padding: 15px 3px 0 3px;
+	float: left;
+	width: 19%;	
+	height: 30px;
+	font-size: medium;
+	text-align: center;
+}
+.mobile-navi-main:after{
+	 content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+.mobile-navi-main {
+	background-color:#f08080;
+}
+.mobile-header h1 {
+	text-align: center;
+	color:#4863A0;
+	background-color:#f08080;
+	border-top: 1px solid #4863A0;
+	margin: 0px;
+    padding: 10px;
+}
+.divider-left {
+	border-right: 1px solid #4863A0;
 }

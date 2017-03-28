@@ -18,26 +18,12 @@ $(document).ready(function() {
     	$(this).toggleClass("expanded");
     	//$(this).find(".dropdown-list").toggle();
 	});
-       
-    $("#total").on("click", function(){
-    	var input1 = parseInt( $("#nmbr1").val());
-    	var input2 = parseInt( $("#nmbr2").val());
-    	var output = input1 + input2;
-    	$("#results").text(output);
-    });
     
-    $("#total1").on("click", function(){
-    	addnumber1();
-    });
-    
-    function addnumber1(){
-    	var input3 = parseInt(document.getElementById("nmbr3").value);
-    	var input4 = parseInt(document.getElementById("nmbr4").value);
-    	var output1 = input3 + input4;
-    	document.getElementById("results1").innerHTML = output1;
-    }
-	
-	window.setInterval(runCarousel, 5000);
+    $(".ham-burger-menu").on("mouseover mouseout", function(){ 
+    	$(this).toggleClass("expanded");
+    	//$(this).find(".dropdown-list").toggle();
+	});   
+    window.setInterval(runCarousel, 5000);
 	    var liWidth = $(".jcarousel ul li:first-child").width();
 	    var liCount = $(".jcarousel ul li").length;
 	    $(".jcarousel ul").width(liWidth * liCount);
@@ -60,10 +46,10 @@ $(document).ready(function() {
 			}
 		console.log(currentleft +" : " + liWidth+ ":"+newLeft);
 		carouselUL.animate({left: newLeft+"px"});
-		//carouselUL.append($(".jcarousel ul li:first-child"));
+		//carouselUL.append($(".jcarousel ul li:first-child"))
 		//carouselUL.prepend($(".jcarousel ul"));
 		
 		
 	    
 	}
-}); 
+});
