@@ -6,104 +6,182 @@
 	href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 <script src="../static/scripts/app.js"></script>
-<link rel="stylesheet" type="text/css" href="../static/css/myfirst.css">
+<link rel="stylesheet" type="text/css"
+	href="../static/css/home_page.css">
 <meta charset="UTF-8">
-<title> My first page</title>
+<title>My first page</title>
 </head>
 <body>
-<header>
-<div class="intro">
-<div class="top-line">
-  <p> Get free standard shipping on order of $50 or more.</p>
-  <a class="g-close" href=""> </a>
-</div>
-<div class="navi">
-  <div class="top-left-nav">
-   <ul>
-    <li><a href="">Store locator</a></li>
-    <li><a id="signup" href="">Sign up for email newspaper</a></li>
-   </ul>
-  </div>
-  <div class="top-right-nav">
-     <div class= "mini-cart">
-       <a href="" class= "mini-cart-link">
-         <span class= mini-cartbag>Bag:</span>
-         <span class= mini-cart-quantity>(0)</span>
-       </a>
-     </div>
-     <div class="signing">
-      <a href="">Sign in/Register</a>
-     </div>
-     <div class="language-selector">
-      Language: <span>EN</span><a href="">FR</a>
-     </div>
-  </div>
-</div>
-<div class= "mainheader"> 
-  <div class= "mainheader1">
-    <h1> MY STORE</h1> 
-    <div class="search-form">
-	    <input type="text" class="searchbox" name="search" placeholder="Search"> 
-	    <button id="search-btn">search</button>
-    </div>
-  </div>
-  <div class="mainheader2">
-    <div class="navigation"> 
-      <div class= "content">
-        <a class="features" href="">FEATURED</a>
-        <div class="dropdown-list feature-dropdown">
-          <ul>
-            <li class="feature-dropdown-list-content1"><a href="">New Products</a></li>
-            <li class="feature-dropdown-list-content2"><a href="">Exclusives</a></li>
-            <li class="feature-dropdown-list-content3"><a href="">On Sale</a></li>
-            <li class="feature-dropdown-list-content4"><a href="">Tools</a></li>
-          </ul>
-         </div>
-       </div>
-       <div class= "content">
-        <a class="eyes" href="">EYES</a>
-        <div class="dropdown-list eyes-dropdown">
-          <ul>
-            <li class="eyes-dropdown-list-content1"><a href="">EyeShadow</a></li>
-            <li class="eyes-dropdown-list-content2"><a href="">EyeLiner</a></li>
-            <li class="eyes-dropdown-list-content3"><a href="">Mascara</a></li>
-            <li class="eyes-dropdown-list-content4"><a href="">Brow</a></li>
-          </ul>
-         </div>
-       </div>
-      <a href="">LIPS</a>
-      <a href="">FACE</a>
-      <a href="">BODY</a>
-      <a href="">NAKED</a>
-      <a href="">PALETTES</a>
-    </div>
-  </div>
-</div>
-<div class="jcarousel" data-is-circular="true">
-<input type="hidden" value="true" id="isCircular"/>
-	<ul>
-		<li class="listitem selected-item"><img src="../static/images/Chrysanthemum.jpg"></li>
-		<li class="listitem"><img src="../static/images/Desert.jpg"></li>
-		<li class="listitem"><img src="../static/images/Hydrangeas.jpg"></li>
-		<li class="listitem"><img src="../static/images/Jellyfish.jpg"></li>
-	</ul>
-</div>
-</div>
-</header>
-<div>
-<input type="number" id="nmbr1"/>
-<input type="number" id="nmbr2"/>
-<button id="total">Total</button>
-<div>Results: <span id="results"></span></div>
-</div>
-<div>
-<input type="number" id="nmbr3"/>
-<input type="number" id="nmbr4"/>
-<button id="total1">Total</button>
-<div>Results: <span id="results1"></span></div>
-</div>
+	<header>
+		<div class="intro">
+			<div class="top-line">
+				<p>Get free standard shipping on order of $50 or more.</p>
+				<a class="g-close" href=""> </a>
+			</div>
+			<div class="mobile-navi">
+				<nav class="mobile-navi-main">
+					<ul>
+						<li class="ham-burger-menu">
+							<div>
+								<div class="ham-burger-icon"></div>
+								<div class="ham-burger-dropdown-list">
+									<ul>
+										<li><a href="">Featured</a></li>
+										<li><a href="">Eyes</a></li>
+										<li><a href="">Lips</a></li>
+										<li><a href="">Face</a></li>
+										<li><a href="">Tools</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="divider-left"><a href="">SignIn</a></li>
+						<li class="divider-left"><a href="">locate</a></li>
+						<li class="divider-left"><a href="">Search</a></li>
+						<li><a href="">Cart</a></li>
+					</ul>
+				</nav>
+				<div class="mobile-header">
+					<h1>MY STORE</h1>
+				</div>
+			</div>
+			<div class="main-header-navi">
+				<div class="navi">
+					<div class="navi-main">
+						<div class="top-left-nav">
+							<ul>
+								<li><a href="">Store locator</a></li>
+								<li><a id="signup" href="">Sign up for email newspaper</a></li>
+							</ul>
+						</div>
+						<div class="top-right-nav">
+							<div class="mini-cart">
+								<a href="" class="mini-cart-link"> <span class=mini-cartbag>Bag:</span>
+									<span class=mini-cart-quantity>[0]</span>
+								</a>
+							</div>
+							<div class="signing">
+								<a href="">Sign in/Register</a>
+							</div>
+							<div class="language-selector">
+								Language: <span>EN</span><a href="">FR</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mainheader">
+					<div class="mainheader1">
+						<h1>MY STORE</h1>
+						<div class="search-form">
+							<input type="text" class="searchbox" name="search" placeholder="Search">
+							<button id="search-btn">search</button>
+						</div>
+					</div>
+					<div class="mainheader2">
+						<div class="navigation">
+							<div class="content">
+								<a class="features" href="">FEATURED</a>
+								<div class="dropdown-list feature-dropdown">
+									<ul>
+										<li class="feature-dropdown-list-content1"><a href="">NewProducts</a></li>
+										<li class="feature-dropdown-list-content2"><a href="">Exclusives</a></li>
+										<li class="feature-dropdown-list-content3"><a href="">OnSale</a></li>
+										<li class="feature-dropdown-list-content4"><a href="">Tools</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="content">
+								<a class="eyes" href="">EYES</a>
+								<div class="dropdown-list eyes-dropdown">
+									<ul>
+										<li class="eyes-dropdown-list-content1"><a href="">EyeShadow</a></li>
+										<li class="eyes-dropdown-list-content2"><a href="">EyeLiner</a></li>
+										<li class="eyes-dropdown-list-content3"><a href="">Mascara</a></li>
+										<li class="eyes-dropdown-list-content4"><a href="">Brow</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="content">
+								<a class="lips" href="">LIPS</a>
+								<div class="dropdown-list lips-dropdown">
+									<ul>
+										<li class="lips-dropdown-list-content1"><a href="">LipStick</a></li>
+										<li class="lips-dropdown-list-content2"><a href="">Lip Gloss</a></li>
+										<li class="lips-dropdown-list-content3"><a href="">Lip Balm</a></li>
+										<li class="lips-dropdown-list-content4"><a href="">Lip Liner</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="content">
+								<a class="face" href="">FACE</a>
+								<div class="dropdown-list face-dropdown">
+									<ul>
+										<li class="face-dropdown-list-content1"><a href="">Foundation</a></li>
+										<li class="face-dropdown-list-content2"><a href="">Concealer</a></li>
+										<li class="face-dropdown-list-content3"><a href="">Face Powder</a></li>
+										<li class="face-dropdown-list-content4"><a href="">Blush/Bronzer</a></li>
+										<li class="face-dropdown-list-content5"><a href="">Highlighter</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="content">
+								<a class="tools" href="">Tools</a>
+								<div class="dropdown-list tools-dropdown">
+									<ul>
+										<li class="tools-dropdown-list-content1"><a href="">Brushes</a></li>
+										<li class="tools-dropdown-list-content2"><a href="">Eyelash Curler</a></li>
+										<li class="tools-dropdown-list-content3"><a href="">Beauty Blender</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="jcarousel" data-is-circular="true">
+				<input type="hidden" value="true" id="isCircular" />
+				<ul>
+					<li class="listitem selected-item"><img src="../static/images/Chrysanthemum.jpg"></li>
+					<li class="listitem"><img src="../static/images/Desert.jpg"></li>
+					<li class="listitem"><img src="../static/images/Hydrangeas.jpg"></li>
+					<li class="listitem"><img src="../static/images/Jellyfish.jpg"></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<footer>
+		<div class="footer-main">
+			<div class="footer-left footer-element">
+				<h2>About Us</h2>
+				<ul>
+					<li><a href="">Our Story</a></li>
+					<li><a href="">Careers</a></li>
 
-	
-
+				</ul>
+			</div>
+			<div class="footer-center1 footer-element">
+				<h2>Account</h2>
+				<ul>
+					<li><a href="">My Account</a></li>
+					<li><a href=""> Order Status</a></li>
+				</ul>	
+			</div>
+			<div class="footer-center2 footer-element">
+				<h2>Customer Service</h2>
+				<ul>
+					<li><a href="">Contact Us</a></li>
+					<li><a href="">FAQ's</a></li>
+					<li><a href="">Shipping Info</a></li>
+					<li><a href="">Return Policy</a></li>
+				</ul>
+			</div>
+			<div class="footer-right footer-element">
+				<a class="facebook" href=""><img src="../static/images/facebook-icon.png" width=15%></a> 
+				<a class="twitter" href=""><img src="../static/images/twitter-icon.png" width=15%></a> 
+				<a class="Youtube" href=""><img src="../static/images/youtube-icon.png" width=15%></a> 
+				<a class="Instagram" href=""><img src="../static/images/instagram-icon.png" width=15%></a>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
